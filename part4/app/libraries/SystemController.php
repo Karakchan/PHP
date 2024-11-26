@@ -1,5 +1,6 @@
 <?php
 
+
 class SystemController{
 
     public function view($blade,$datas=[]){
