@@ -35,3 +35,29 @@ show defined as Method
 1 defined as Parameter
 
 ------------------------------------------------------------------------------------
+
+
+// echo $_SERVER['QUERY_STRING']; 
+
+// echo $_GET['url'];
+
+------------------------------------------------------------------------------------
+
+=>For Linux 
+sudo service apache2 stop
+sudo service apache2 start
+sudo service apache2 restart
+sudo service apache2 reload
+
+=>For Linux (Apache Edit For rewrite)
+sudo a2enmod rewrite
+sudo nano /etc/apache2/sites-enabled/000-default.conf
+
+=add these lines to the end
+<Directory /var/www/html>
+    AllowOverride All
+<Directory>
+
+
+
+

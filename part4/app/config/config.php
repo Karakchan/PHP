@@ -18,6 +18,6 @@ define('DB_USER','root');
 define('DB_PASS','Mydbsever#2025');
 define('DB_NAME','phpdbsix'); 
 
-echo "I am config";
+echo "I am config <br/>";
 
 ?>
