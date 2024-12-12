@@ -9,8 +9,3 @@
 
 </IfModule>
 
-
-<!-- #QSA (Append Query String from request to substitue URL) -->
-    <!-- Request URL = /aboutus?address=yangon -->
-    <!-- Redirected URL = index.php?address=yangon -->
-<!-- #L (Stop Processing Rules) -->

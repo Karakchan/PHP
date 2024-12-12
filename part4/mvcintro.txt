@@ -56,7 +56,7 @@ sudo nano /etc/apache2/sites-enabled/000-default.conf
 =add these lines to the end
 <Directory /var/www/html>
     AllowOverride All
-<Directory>
+</Directory>
 
 
 
