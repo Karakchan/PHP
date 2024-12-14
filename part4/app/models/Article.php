@@ -1,13 +1,13 @@
 <?php
 
-require_once '../libraries/SystemDatabase.php';
+// require_once '../libraries/SystemDatabase.php';
 
 class Article{
 
     private $db;
 
     public function __construct(){
-        echo "i am article Model </br>";
+        // echo "i am article Model </br>";
 
         $this->db = new SystemDatabase();
     }
@@ -18,6 +18,6 @@ class Article{
     }
 }
 
-new Article();
+// new Article();
 
 ?>
