@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteBase /phpbatch4/part5/public
+    RewriteCond %{REQUEST_FILENAMME} !-d
+    RewriteCond %{REQUEST_FILENAMME} !-f
+    RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+</IfModule>

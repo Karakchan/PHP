@@ -1,0 +1,63 @@
+=> MVC (MOdel View Controller)
+
+=> Model 
+it's work with database (select,insert,update,delete)
+communicate with the Controller ( when controller request or data to moal ! model supplies that)
+
+=> View
+A views is that part of the application that represents the presentation of data HTML,css codes for end user see.
+
+=> Controller
+The controller receive input from the end user, process the request (GET,POST,PUT,DELETE)
+Note : The Controller mediates between the Model and views 
+
+------------------------------------------------------------------------------------
+
+
+
+
+=> Routing 
+
+https://dlt.com/
+https://dlt.com/roles/index.php
+https://dlt.com/roles/1/edit.php 
+https://dlt.com/roles/show/1.php 
+
+Base URL = https://dlt.com/
+Absolute URL = https://dlt.com/roles/index.php
+Relative URL 
+    (i) Prefix URL = /roles/
+    (ii) Entry-Specific URL =  /show/2.php 
+
+example route = roles/show/1.php
+roles defined as CLASS
+show defined as Method
+1 defined as Parameter
+
+------------------------------------------------------------------------------------
+
+
+// echo $_SERVER['QUERY_STRING']; 
+
+// echo $_GET['url'];
+
+------------------------------------------------------------------------------------
+
+=>For Linux 
+sudo service apache2 stop
+sudo service apache2 start
+sudo service apache2 restart
+sudo service apache2 reload
+
+=>For Linux (Apache Edit For rewrite)
+sudo a2enmod rewrite
+sudo nano /etc/apache2/sites-enabled/000-default.conf
+
+=add these lines to the end
+<Directory /var/www/html>
+    AllowOverride All
+</Directory>
+
+
+
+
