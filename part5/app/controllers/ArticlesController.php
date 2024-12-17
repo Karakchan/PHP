@@ -8,7 +8,7 @@ class ArticlesController extends SystemController{
     private $mainmodal;
 
     public function __construct(){
-        echo "I am ArticlesController";
+        // echo "I am ArticlesController";
         $this->mainmodal = $this->model('Article');
     }
 
@@ -25,7 +25,7 @@ class ArticlesController extends SystemController{
 
     //    return $this->view('articles/index'.$datas());
 
-    //    $articles = $this->mainmodal->getarticles();
+       $articles = $this->mainmodal->getarticles();
     $datas = [
             "greeting"=>"Have a day Sir",
             "caption"=>"We got all Articles here!!",

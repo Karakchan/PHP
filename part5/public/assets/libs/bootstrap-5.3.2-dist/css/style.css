@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+    --primary-color:hsla(203,100%,13%,1);
+    --secondary-color:hsl(330,87%,17%);
+    --fruit-color: tomato;
+
+
+}
+body{
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+    padding: 0;
+    margin: 0;
+}
+
+/* Start Header Section */
+header{
+    height: 100vh;
+    background: url(./../../../img/banner/banner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Start Nav Bar */
+.navbar{
+    background: linear-gradient(rgba(0,0,0,3),var(--primary-color));
+    padding: 20px 30px;
+}
+/* End Nav Bar */
+
+/* end Header Section */
