@@ -1,6 +1,5 @@
 <?php
 
-// require_once '../libraries/SystemDatabase.php';
 
 class Article{
 

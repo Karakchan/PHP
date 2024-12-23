@@ -1,6 +1,5 @@
 <?php
 
-// require_once "../libraries/SystemController.php";
 
 
 class ArticlesController extends SystemController{
@@ -8,27 +7,19 @@ class ArticlesController extends SystemController{
     private $mainmodal;
 
     public function __construct(){
-        // echo "I am ArticlesController";
         $this->mainmodal = $this->model('Article');
+
+        if(!authcheck()){
+            redirect('user/login');
+        }else{
+            $this->mainmodal = $this->model('Article');
+        }
     }
 
     public function index(){
-        // echo "I am Article Index Page";
-
-        // return $this->view('articles/index');
-
-    //    return $this->view('articles/index'.["greeting"=>"Hello Sir!"]);
-
-    //    $datas = [
-    //         "greeting"=>"Have a day Sir"
-    //    ];
-
-    //    return $this->view('articles/index'.$datas());
 
        $articles = $this->mainmodal->getarticles();
     $datas = [
-            "greeting"=>"Have a day Sir",
-            "caption"=>"We got all Articles here!!",
             'articles'=>$articles
         ];
     return $this->view('articles/index'.$datas);
@@ -61,11 +52,6 @@ class ArticlesController extends SystemController{
 
     
 }
-
-// new ArticlesController();
-
-echo "<hr/>";
-
 
 
 ?>
