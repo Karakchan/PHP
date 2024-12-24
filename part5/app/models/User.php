@@ -47,6 +47,25 @@ class User{
 
     }
 
+
+
+    public function checkuniqueemail($email){
+
+        $this->db->dbquery("SELECT * FROM users WHERE email=:email");
+        $this->db->dbbind(":email",$email);
+
+        $row = $this->db->getsingledataassoc();
+
+
+        if($this->db->dbrowcount() > 0){
+            return true;
+        }else{
+            return false;
+        }
+
+
+    }
+
 }
 
 // new Article();
